@@ -24,8 +24,8 @@
                 </p>
                 <p>
 		I'm a research assistant at <a href="https://www.tuhh.de/tuhh/startseite"> Hamburg University of Technology </a> , affiliated with the <a href="https://www3.tuhh.de/itl/"> Institue of Logistics Engineering </a>. I earned a Master's degree in Mechatronics and a Bachelor's degree in Mechanical Engineering.</p>
-    I've had the priviledge of working under the supervision of <a href="https://www.tuhh.de/mum/team/professoren/robert-seifried">Prof. Robert Seifried</a> at <a href="https://www.tuhh.de/mum/home"> MUM</a> and <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/"> Prof. Masayoshi Tomizuka</a> at the <a href="https://msc.berkeley.edu/"> MSC Lab</a> during my study abroad at <a href="https://www.berkeley.edu/"> UC Berkeley</a>. </p>
-    I'm interested in robotics, control, robot learning, in particular reinforcement learning and imitation learning for applications in dynamic and clustered environments.
+    I've had the priviledge of working with <a href="https://www.tuhh.de/mum/team/professoren/robert-seifried">Prof. Robert Seifried</a> at the <a href="https://www.tuhh.de/mum/home"> Institute of Mechanics and Ocean Engineering</a> and <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/"> Prof. Masayoshi Tomizuka</a> at the <a href="https://msc.berkeley.edu/"> Mechanical Systems Control Lab</a> during my study abroad at <a href="https://www.berkeley.edu/"> UC Berkeley</a>. </p>
+    I'm interested in robot control and learning, with a particular passion for applications in dynamic and clustered environments.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:sean.maroofi@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -44,7 +44,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h3>News</h3>
                 <p>
-                  <font color=#FF8080><strong> 08/2025</strong></font></em> Our workshop proposal on "Prediction of Robot Localization Failure" has been accepted to <a href="https://ipin-conference.org/2025/">IPIN 2025</a>
+                  <font color=#FF8080><strong> 08/2025</strong></font></em> We will conduct a workshop on "Prediction of Robot Localization Failure" at <a href="https://ipin-conference.org/2025/">IPIN 2025</a>.
                 </p>
               </td>
             </tr>
@@ -54,12 +54,52 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  Please find a list of my published publications and those <span class="review">under review</span> as well as papers <span class="preparation">in preperation</span> below. 
+                  Please find a list of my research work below, <span class="review">under review</span> as well as papers <span class="preparation">ongoing/in preparation</span> below. 
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="ipin_stop()" onmouseover="ipin_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='momo_nav'><video  width=100% height=100% autoplay muted loop>
+          <source src="images/momo_in_simu.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        <img src='images/flowcean_ipin2025.png' width=100%>
+        <script type="text/javascript">
+          function ipin_start() {
+            document.getElementById('momo_nav').style.opacity = "1";
+          }
+          function ipin_stop() {
+            document.getElementById('momo_nav').style.opacity = "0";
+          }
+          ipin_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://sm20598.github.io/ipin2025/">
+          <span class="papertitle">Creating Data-Driven Models for Predicting Localization Failures for Mobile Robots</span>
+        </a>
+        <br>
+        Markus Knitt*,
+		<strong>Sean Maroofi*</strong>,
+        Maximilian Schmidt,
+        Manav Thakkar,
+        <br>
+        <br>
+        <em> IPIN, <font color=#FF8080><strong>2025</strong></font></em>
+        <br>
+        <a href="https://sm20598.github.io/ipin2025/">project page</a>
+
+        <p></p>
+        <p>
+        Workshop on predicition of localization loss in dynamic environments for precautionary actions. 
+      </td>
+    </tr>
 
     <tr onmouseout="mrcd_stop()" onmouseover="mrcd_start()"  bgcolor="#C5D3E8">
       <td style="padding:16px;width:20%;vertical-align:middle">
@@ -93,6 +133,7 @@
         Philipp Braun,
         Carlos Jahn
         <br>
+        <br>
         <em>Under Review, <font color=#FF8080><strong>2025</strong></font></em>
         <br>
         <a href="https://sm20598.github.io/MRCD/">project page</a> /
@@ -100,7 +141,7 @@
 
         <p></p>
         <p>
-		A novel dataset contribution to the development of navigation, localization, and mapping algorithms for wheeled robots in outdoor urban environments. 
+		    A multi-modal outdoor SLAM dataset for wheeled robots in urban environments. 
         </p>
       </td>
     </tr>
@@ -111,7 +152,8 @@
           <div class="two" id='softrobo'><video  width=100% height=100% autoplay muted loop>
           <source src="images/soft_robo_noaudio_cut.mp4" type="video/mp4">
           Your browser does not support the video tag.
-          </video></div>
+          </video>
+        </div>
           <img src='images/softrobo.png' width="160">
         </div>
         <script type="text/javascript">
@@ -126,18 +168,18 @@
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="data/thesis_softrobot_maroofi.pdf">
-			<span class="papertitle">Dynamic Model Inversion of Soft Robots
-</span>
+			<span class="papertitle">Dynamic Model Inversion of a Soft Robot using Servo Constraints</span>
         </a>
         <br>
 				<strong>Sean Maroofi</strong>,
 				Malte Grube
         Robert Seifried
 				<br>
+        <br>
         <em>In Preparation</em>, <font color=#FF8080><strong>2025</strong></font>
         <br>
-        <a href="data/thesis_softrobot_maroofi.pdf">research thesis</a><p>
-				Tackling infinite degree of freedom by combining constant curvature assumption and servo-constraints approach to derive full-body dynamics for accurate tracking of spatial trajectories.
+        <a href="data/ICRA_Softrobot.pdf">preprint</a><p>
+				Addressing model inversion for robust dynamic control of underactuated, redundant soft robots.
         </p>
       </td>
     </tr>
@@ -172,9 +214,10 @@
         Justin Ziegenbein,
         Hendrik Rose,
 				<br>
+        <br>
         <em>Workshop on Autonomous Delivery and Service Robots</em>, <font color=#FF8080><strong>05/2025</strong></font>
         <br>
-        <a href=https://r4r.informatik.tu-freiberg.de/r4r-workshop-und-abschlussveranstaltung>Workshop page</a>
+        <a href=https://r4r.informatik.tu-freiberg.de/r4r-workshop-und-abschlussveranstaltung>project page</a>
         <p></p>
         <p>
 				Industry-Academica dialogue on persistent challenges and restrictions in urban robot applications across Germany.
@@ -192,7 +235,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Projects</h2>
                 <p>
-                  Throughout my academic journey, I participated in a number of robot projects. Please find a list of my <span class="ongoing">ongoing</span> and completed projects below. 
+                  Throughout my academic career, I participated in a number of robot projects. Please find a list of my <span class="ongoing">ongoing</span> and completed projects below. 
                 </p>
               </td>
             </tr>
@@ -321,7 +364,7 @@
         <a href="data/thesis_rl_autonomous_driving_maroofi.pdf">research thesis</a>
         <p></p>
         <p>
-        Ego-vehicle 13 learned an acceleration and steering-angle policy using soft-actor-critic to navigate a roundabout.
+        Learning steering commands using soft-actor-critic for navigation in dense scenes.
         </p>
       </td>
     </tr>
@@ -389,7 +432,7 @@
 								 </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:center">
-                Master Thesis Supervisor, <strong> Hamburg University of Technology</strong>
+                Sidewalk Detection for Robot Navigation (Master Thesis Supervisor), <strong> Hamburg University of Technology</strong>
                 <br>
                 <a href="https://www.tuhh.de/acps/teaching/diss">Design and Implementation of Software Systems,</a> <strong> Hamburg University of Technology</strong>
                 <br>
