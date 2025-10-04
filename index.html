@@ -44,7 +44,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h3>News</h3>
                 <p>
-                  <font color=#FF8080><strong> 08/2025</strong></font></em> We will conduct a workshop on "Prediction of Robot Localization Failure" at <a href="https://ipin-conference.org/2025/">IPIN 2025</a>.
+                  <font color=#FF8080><strong> 08/2025</strong></font></em> We will conduct a <a href="https://ipin-conference.org/2025/tut_tutorial01.html">workshop</a> on "Prediction of Robot Localization Failure" at <a href="https://ipin-conference.org/2025/">IPIN 2025</a>.
                 </p>
               </td>
             </tr>
@@ -61,21 +61,64 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+            <!-- PAPERS -->
+
+
+    <tr onmouseout="softrobo_stop()" onmouseover="softrobo_start()" bgcolor="#C5D3E8">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='softrobo'><video  width=100% height=100% autoplay muted loop>
+          <source src="images/soft_robo_noaudio_cut.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+          <img src='images/softrobo.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function softrobo_start() {
+            document.getElementById('softrobo').style.opacity = "1";
+          }
+          function softrobo_stop() {
+            document.getElementById('softrobo').style.opacity = "0";
+          }
+          softrobo_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="data/thesis_softrobot_maroofi.pdf">
+			<span class="papertitle">Dynamic Model Inversion of a Soft Robot using Servo Constraints</span>
+        </a>
+        <br>
+				<strong>Sean Maroofi</strong>,
+				Malte Grube
+        Robert Seifried
+				<br>
+        <br>
+        <em>Under Review</em>, <font color=#FF8080><strong>2025</strong></font>
+        <br>
+        <a href="data/root_unanonymized.pdf">preprint</a><p>
+				Addressing model inversion for robust dynamic control of underactuated, redundant soft robots.
+        </p>
+      </td>
+    </tr>
+
+
     <tr onmouseout="ipin_stop()" onmouseover="ipin_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='momo_nav'><video  width=100% height=100% autoplay muted loop>
-          <source src="images/momo_in_simu.mp4" type="video/mp4">
+          <div class="two" id='turtle_sim'><video  width=100% height=100% autoplay muted loop>
+          <source src="images/turtlesim.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video>
         </div>
         <img src='images/flowcean_ipin2025.png' width=100%>
         <script type="text/javascript">
           function ipin_start() {
-            document.getElementById('momo_nav').style.opacity = "1";
+            document.getElementById('turtle_sim').style.opacity = "1";
           }
           function ipin_stop() {
-            document.getElementById('momo_nav').style.opacity = "0";
+            document.getElementById('turtle_sim').style.opacity = "0";
           }
           ipin_stop()
         </script>
@@ -93,13 +136,56 @@
         <br>
         <em> IPIN, <font color=#FF8080><strong>2025</strong></font></em>
         <br>
-        <a href="https://sm20598.github.io/ipin2025/">project page</a>
+        <a href="https://ipin2025.flowcean.me/">project page</a> | <a href="https://ipin-conference.org/2025/tut_tutorial01.html">conference page</a>
 
         <p></p>
         <p>
         Workshop on predicition of localization loss in dynamic environments for precautionary actions. 
       </td>
     </tr>
+
+
+        <tr onmouseout="momo_simu_stop()" onmouseover="momo_simu_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='momo_nav'><video  width=100% height=100% autoplay muted loop>
+          <source src="images/momo_in_simu.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        <img src='images/momo_sim.png' width=100%>
+        <script type="text/javascript">
+          function momo_simu_start() {
+            document.getElementById('momo_nav').style.opacity = "1";
+          }
+          function momo_simu_stop() {
+            document.getElementById('momo_nav').style.opacity = "0";
+          }
+          momo_simu_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="data/2025_ipin_synthetic_datasets.pdf">
+          <span class="papertitle">Synthetic Datasets for Data-Driven Localization Monitoring</span>
+        </a>
+        <br>
+        Markus Knitt*,
+		<strong>Sean Maroofi*</strong>,
+        Manav Thakkar*,
+        Hendrik Rose,
+        Philipp Braun,
+        <br>
+        <br>
+        <em> Logistics Journal, <font color=#FF8080><strong>2025</strong></font></em>
+        <br>
+        <a href="https://github.com/flowcean/flowcean/tree/robotics-example-model-improvement">project page</a> | <a href="https://www.wgtl.de/veranstaltungen/kolloquium-2025/">conference page</a>
+
+        <p></p>
+        <p>
+        A collection of data sequences for induced localization failure of autonomous robots. 
+      </td>
+    </tr>
+
 
     <tr onmouseout="mrcd_stop()" onmouseover="mrcd_start()"  bgcolor="#C5D3E8">
       <td style="padding:16px;width:20%;vertical-align:middle">
@@ -146,44 +232,6 @@
       </td>
     </tr>
 
-    <tr onmouseout="softrobo_stop()" onmouseover="softrobo_start()" bgcolor="#FFF8DE">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='softrobo'><video  width=100% height=100% autoplay muted loop>
-          <source src="images/soft_robo_noaudio_cut.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-        </div>
-          <img src='images/softrobo.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function softrobo_start() {
-            document.getElementById('softrobo').style.opacity = "1";
-          }
-          function softrobo_stop() {
-            document.getElementById('softrobo').style.opacity = "0";
-          }
-          softrobo_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="data/thesis_softrobot_maroofi.pdf">
-			<span class="papertitle">Dynamic Model Inversion of a Soft Robot using Servo Constraints</span>
-        </a>
-        <br>
-				<strong>Sean Maroofi</strong>,
-				Malte Grube
-        Robert Seifried
-				<br>
-        <br>
-        <em>In Preparation</em>, <font color=#FF8080><strong>2025</strong></font>
-        <br>
-        <a href="data/ICRA_Softrobot.pdf">preprint</a><p>
-				Addressing model inversion for robust dynamic control of underactuated, redundant soft robots.
-        </p>
-      </td>
-    </tr>
-
         <tr onmouseout="ready4robots_stop()" onmouseover="ready4robots_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -203,7 +251,7 @@
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://r4r.informatik.tu-freiberg.de/r4r-workshop-und-abschlussveranstaltung">
+        <a href="https://tubaf.qucosa.de/landing-page/https%3A%2F%2Ftubaf.qucosa.de%2Fapi%2Fqucosa%253A98127%2Fmets%2F/">
 			<span class="papertitle">Integrating Delivery Robots into Public Transport
 </span>
         </a>
@@ -215,9 +263,9 @@
         Hendrik Rose,
 				<br>
         <br>
-        <em>Workshop on Autonomous Delivery and Service Robots</em>, <font color=#FF8080><strong>05/2025</strong></font>
+        <em>Workshop on Autonomous Delivery and Service Robots on Pedestrian and Cycle Paths</em>, <font color=#FF8080><strong>2025</strong></font>
         <br>
-        <a href=https://r4r.informatik.tu-freiberg.de/r4r-workshop-und-abschlussveranstaltung>project page</a>
+        <a href=https://tubaf.qucosa.de/landing-page/https%3A%2F%2Ftubaf.qucosa.de%2Fapi%2Fqucosa%253A98127%2Fmets%2F>publication</a> | <a href=https://r4r.informatik.tu-freiberg.de/r4r-workshop-und-abschlussveranstaltung>project page</a>
         <p></p>
         <p>
 				Industry-Academica dialogue on persistent challenges and restrictions in urban robot applications across Germany.
@@ -405,7 +453,7 @@
         <a href="data/cs282.pdf">technical report</a>
         <p></p>
         <p>
-        Using visual transformers to predict trajectories of multiple vehicles in autonomous racing.
+        Vision transformers can predict trajectories of multiple vehicles in autonomous racing.
         </p>
       </td>
     </tr>
